@@ -1,0 +1,24 @@
+<html>
+  <body>
+
+    <h3>Today Fruits</h3>
+    <ul id="fruit-list"></ul>
+
+    <hr/>
+
+    <h3>Today Vegetables</h3>
+    <ul id="veg-list"></ul>
+
+    <script>
+      const fruits = ["Apple", "Banana", "Orange", "Mango", "Strawberry"];
+      const fruitList = document.getElementById("fruit-list");
+
+      const vegetables = ["Carrot", "Broccoli", "Spinach", "Tomato", "Cucumber"];
+      const vegList = document.getElementById("veg-list");
+
+      fruitList.innerHTML = fruits.map(fruit => `<li>${fruit}</li>`).join('');
+      vegList.innerHTML = vegetables.map(veg => `<li>${veg}</li>`).join('');
+    </script>
+
+  </body>
+</html>
